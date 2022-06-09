@@ -16,18 +16,4 @@ class UserController extends Controller
     {
         return view('');
     }
-
-    /**
-     * Save in data base
-     */
-    public function store(Request $request)
-    {
-        $user = new User;
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->password = $request->password;
-        $user->login = $request->login;
-        $user->save();
-        return redirect('');
-    }
 }
