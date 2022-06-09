@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\RoomController;
+use Illuminate\Database\Schema\IndexDefinition;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +19,14 @@ use Illuminate\Support\Facades\Route;
 //Route::post('/register', [UserController::class, 'register']);
 //Route::post('/register', [UserController::class, 'register']);
 
-Route::group(['midlleware' => ['auth:sanctum']], function(){
 
-});
+
+
+Route::group(['midlleware' => ['auth:sanctum']], function(){});
+
+Route::get('/booking', [BookingController::class, 'index']);
+Route::get('/create/booking', [BookingController::class, 'create']);
+Route::post('/create/booking', [BookingController::class, 'store']);
+
+Route::get('/room', [RoomController::class, 'index']);
+Route::post('/room', [RoomController::class, 'store']);
