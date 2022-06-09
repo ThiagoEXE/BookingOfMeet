@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    //Registrar um novo usuário
+    //Register a new user
     public function register(Request $request){
         $request->validate([
             //'id' => 'incre'
@@ -21,7 +21,7 @@ class AuthController extends Controller
              'email' => $request->email,
              'password' => bcrypt($request->password)
     ]);
-    //Token de autenticação
+    //Autentication token
         $token = $user->createToken('newtoken')->plainTextToken;
         $response = [
             'user'=> $user,
@@ -32,7 +32,7 @@ class AuthController extends Controller
 
   }
 
-    //Login do Usuário
+    //User login
         public function login(Request $request){
            $request->validate([
 
