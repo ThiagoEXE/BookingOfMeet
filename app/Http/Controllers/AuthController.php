@@ -50,5 +50,13 @@ class AuthController extends Controller
                 'message' => 'Invalid Credentials'
             ], 401);
         }
+        $token = $user->createToken('newtoken')->plainTextToken;
+        $response = [
+            'user'=> $user,
+            'token' => $token
+        ];
+
+        return response($response, 201);
+
    }
 }
