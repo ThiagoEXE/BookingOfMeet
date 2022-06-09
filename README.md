@@ -2,7 +2,7 @@
 
 ## Task Agendar Reunião
 <p align="center">
-    Essa task tem como objetivo fazer um agendamento de uma sala de reunião física de modo a saber quem agendou a reunião, a ata e participantes assim como moduló de confirmação de participação por e-mail
+    Essa task tem como objetivo fazer um agendamento de uma sala de reunião física de modo a saber quem agendou a reunião, a ata e participantes assim como modulo de confirmação de participação por e-mail
 </p>
 
 
