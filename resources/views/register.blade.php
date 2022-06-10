@@ -21,7 +21,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <form method="post" action="/register">
+            <form method="POST" action="/">
               @csrf
                 <div class="col col-lg-4 mt-5">
                     <div class="card ofc mt-5">
@@ -88,7 +88,7 @@
                             </div>
                             <div class="row justify-content-between mt-3">
                                 <div class="col-auto">
-                                    <button class="btn-hover color-9">Sign up</button>
+                                    <button class="btn-hover color-9" type="submit">Sign up</button>
                                 </div>
                             </div>
                         </div>
