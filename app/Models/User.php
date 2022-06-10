@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'login',
     ];
 
     /**
@@ -41,4 +42,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function booking(){
+        return $this->belongsTo(Booking::class);
+    }
+    public function invitation(){
+        return $this->belongsTo(Invitation::class);
+    }
+    public function guest(){
+        return $this->belongsTo(Guest::class);
+    }
+    public function bookingsAsParticipant(){
+        return $this->belongsToMany(Booking::class);
+    }
 }
