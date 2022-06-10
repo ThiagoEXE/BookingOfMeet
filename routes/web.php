@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\RoomController;
 use Illuminate\Database\Schema\IndexDefinition;
@@ -16,13 +17,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::get('/register', [UserController::class, 'create']);
 
 //Route::post('/register', [UserController::class, 'register']);
 //Route::post('/register', [UserController::class, 'register']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+Route::get('/login', [AuthController::class, 'log']);
 
 
 
