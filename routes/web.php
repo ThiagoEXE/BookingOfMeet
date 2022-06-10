@@ -20,12 +20,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [UserController::class, 'index']);
-Route::get('/register', [UserController::class, 'create']);
+// Route::get('/register', [UserController::class, 'create']);
 
-//Route::post('/register', [UserController::class, 'register']);
-//Route::post('/register', [UserController::class, 'register']);
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
+// Route::post('/register', [UserController::class, 'register']);
+// Route::post('/register', [UserController::class, 'register']);
+// Route::post('/register', [AuthController::class, 'register']);
+// Route::post('/login', [AuthController::class, 'login']);
 
 
 
@@ -40,8 +40,18 @@ Route::post('/create/booking', [BookingController::class, 'store']);
 Route::get('/room', [RoomController::class, 'index']);
 Route::post('/room', [RoomController::class, 'store']);
 
-Route::group(['midlleware' => ['auth:sanctum']], function(){
-    Route::post('/logout', [AuthController::class, 'logout']);
+// Route::group(['midlleware' => ['auth:sanctum']], function(){
+//     Route::post('/logout', [AuthController::class, 'logout']);
+// });
+
+
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 });
-
-

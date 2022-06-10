@@ -21,14 +21,14 @@ class AuthController extends Controller
              'email' => $request->email,
              'password' => bcrypt($request->password)
     ]);
-    //Token de autenticação
-        $token = $user->createToken('newtoken')->plainTextToken;
-        $response = [
-            'user'=> $user,
-            'token' => $token
-        ];
-
-        return response($response, 201);
+    // Token de autenticação
+    //     $token = $user->createToken('newtoken')->plainTextToken;
+    //     // $response = [
+    //     //     'user'=> $user,
+    //     //     'token' => $token
+    //     // ];
+        // $user->save();
+        return redirect('/login');
 
   }
 
@@ -46,9 +46,7 @@ class AuthController extends Controller
         //valida o usuário e checa a senha
 
         if(!$user || !Hash::check($request->password, $user->password)){
-            return response([
-                'message' => 'Invalid Credentials'
-            ], 401);
+            return redirect('/');
         }
         $token = $user->createToken('newtoken')->plainTextToken;
         $response = [
@@ -56,7 +54,7 @@ class AuthController extends Controller
             'token' => $token
         ];
 
-        return response($response, 201);
+        return redirect('/register');
 
    }
 

@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col col-lg-4 mt-5">
-                <form>
+                <form method="POST" action="/login">
                   @csrf
                     <div class="card ofc mt-5">
                         <div class="card-body">
@@ -41,7 +41,7 @@
                             <div class="form-group mt-3">
                                 <div class="card">
                                     <div class="card-body">
-                                        <label class="email" for="email ">Type your e-mail / User</label>
+                                        <label class="email" for="email ">Type your e-mail</label>
                                         <input type="email" id="email" class="form-control mt-2"
                                             placeholder="Type your e-mail " required name="email"/>
                                     </div>
@@ -51,7 +51,7 @@
                                 <div class="card-body">
                                     <label for="pass">Type your password</label>
                                     <input type="password" id="pass" class="form-control mt-2"
-                                        placeholder="Type your password" required />
+                                        placeholder="Type your password" required name="password"/>
                                 </div>
                             </div>
                             <div class="row justify-content-between mt-3">
