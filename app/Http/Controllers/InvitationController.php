@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -23,13 +24,13 @@ class InvitationController extends Controller{
 
     }
 
-    public function show()
+    public function show($id){
 
-    {
-        $booking = Booking::findOrFail($id);//pendente subir a classe Booking
 
-        return view('/invitation', compact($booking));/*criar uma blade para buscar pelo id a
-        data e hora, tem e descrição da reunião*/
+
+        $booking = Booking::findOrFail($id);
+
+        return view('/invitation', ['Booking' => $booking]);
     }
 
 
