@@ -34,14 +34,4 @@ class InvitationController extends Controller{
 
 
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-<<<<<<< HEAD
-     * @return \Illuminate\Http\Response
-=======
-     *      * @return \Illuminate\Http\Response
->>>>>>> thiago
-     */
 }
