@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\UserController;
 use Illuminate\Database\Schema\IndexDefinition;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::get('/', [UserController::class, 'index']);
 Route::get('/register', [UserController::class, 'create']);
 
 //Route::post('/register', [UserController::class, 'register']);

@@ -14,6 +14,10 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('');
+        return view('register');
+    }
+
+    public function index(){
+        return view('login');
     }
 }

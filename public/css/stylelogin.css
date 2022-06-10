@@ -14,11 +14,10 @@ body {
   color: #4b4b5a;
   
 }
-
-
-
 .registrationhref{
   text-decoration: none;
+  cursor: pointer;
+  
 }
 
 .mensagem1{
