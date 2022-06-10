@@ -13,8 +13,6 @@ class Invitation extends Model
         'name',
         'acceptance',
         'description',
-        'id_user',
-        'id_booking'
     ];
 
     public function users(){ //VER COM CANDIDO O CASO DO USERS

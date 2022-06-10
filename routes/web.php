@@ -26,10 +26,6 @@ Route::post('/login', [AuthController::class, 'login']);
 
 
 
-
-
-
-
 Route::get('/booking', [BookingController::class, 'index']);
 Route::get('/create/booking', [BookingController::class, 'create']);
 Route::post('/create/booking', [BookingController::class, 'store']);
