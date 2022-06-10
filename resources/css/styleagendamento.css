@@ -1,0 +1,170 @@
+.spanlogin {
+  color: #3696cd;
+  font-weight: bold;
+}
+
+body {
+  background-image: url("https://www.aente.com.br/img/background.jpeg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position-x: 0%;
+}
+
+.titulo > h2 {
+  color: #4b4b5a;
+}
+
+.registrationhref {
+  text-decoration: none;
+}
+
+.mensagem1 {
+  font-family: Nunito Sans, sans-serif !important;
+  font-size: 14px;
+}
+body,
+h3,
+h5,
+p,
+label,
+input,
+button {
+  font-family: "Nunito Sans", sans-serif;
+  color: #737c83;
+  font-size: 13px;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.logo {
+  size: 2%;
+}
+
+
+.btn-secondary {
+  letter-spacing: 0.0892857143em;
+  font-size: 14px;
+  font-weight: -100;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  padding-left: 0;
+  padding-right: 0;
+  height: 36px;
+  min-width: 64px;
+  line-height: 1;
+  border-radius: 4px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  padding: 10px 15px;
+}
+
+.btn-secondary:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-secondary:focus {
+  outline: none;
+}
+
+.btn-secondary .btn-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-8 {
+  background-image: linear-gradient(#181a1b, #34363b, #55666b, #a2adbd);
+  box-shadow: 0 4px 15px 0 #1d1e20bf;
+}
+
+.btn-hover.color-blue{
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #4481eb,
+    #04befe,
+    #3f86ed
+  );
+  box-shadow: 0 4px 15px 0 #4184eabf;
+}
+
+.second {
+  align-items: center;
+  height: -20;
+}
+
+
+.btn-hover {
+  width: 70px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 30px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+  
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-red {
+  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+.btn-hover.color-green {
+  background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+
+}
+.btn-hover.color-green {
+  width: 130px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 30px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+
