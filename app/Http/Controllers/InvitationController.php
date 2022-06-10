@@ -24,6 +24,7 @@ class InvitationController extends Controller{
     }
 
     public function show()
+
     {
         $booking = Booking::findOrFail($id);//pendente subir a classe Booking
 
