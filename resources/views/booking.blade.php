@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="{{ asset('css/styleagendamento.css') }}" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,7 +49,7 @@
                     <th></th>
                     <th></th>
                     <th>Action</th>
-                    <th><button class="btn-hover color-green">New schedule</button></th>
+                    <th><a class="btn-hover color-green" href="/create/booking">New schedule</a></th>
                   </thead>
                   <tbody>
                     <tr>
